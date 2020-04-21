@@ -1,14 +1,15 @@
-from django.test import TestCase, RequestFactory
-from helloworld.views import HomePageView
 
-class HelloWorldTestCase(TestCase):
+#from django.test import TestCase, RequestFactory
+#from helloworld.views import HomePageView
 
-    def setUp(self):
-        self.factory = RequestFactory()
+#class HelloWorldTestCase(TestCase):
 
-    def test_home_page(self):
-        request = self.factory.get('/')
-        response = HomePageView.as_view()(request)
-        self.assertEqual(response.get('content-type'), 'text/html; charset=utf-8')
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, 'Congratulations')
+ #   def setUp(self):
+  #      self.factory = RequestFactory()
+
+#    def test_home_page(self):
+#        request = self.factory.get('/')
+#        response = HomePageView.as_view()(request)
+#        self.assertEqual(response.get('content-type'), 'text/html; charset=utf-8')
+#        self.assertEqual(response.status_code, 200)
+#        self.assertContains(response, 'Congratulations')
