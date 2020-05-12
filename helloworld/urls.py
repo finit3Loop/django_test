@@ -5,5 +5,5 @@ from helloworld import views
 
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view()),
-    url(r'^hasher/$', views.get_password.as_view()),
+    # url(r'^hasher/$', views.get_password.as_view()),
 ]
