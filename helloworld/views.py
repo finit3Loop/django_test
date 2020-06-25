@@ -30,5 +30,5 @@ def get_password(request):
     else:
         form = PasswordForm()
 
-    return render(request, 'Hasher.html', {'form': form})
+    return render(request, 'Hasher.html', context=None)
 
