@@ -24,7 +24,7 @@ def get_password(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/Hasher/')
+            return HttpResponseRedirect('/Hasher.html')
 
     # if a GET (or any other method) we'll create a blank form
     else:
