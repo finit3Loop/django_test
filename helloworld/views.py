@@ -19,17 +19,17 @@ def get_password(request):
     def get(self, request, **kwargs):
       ##  if request.method == 'POST':
             # create a form instance and populate it with data from the request:
-            form = PasswordForm(request.POST)
+      ##      form = PasswordForm(request.POST)
             # check whether it's valid:
-            if form.is_valid():
+       ##     if form.is_valid():
                 # process the data in form.cleaned_data as required
                 # ...
                 # redirect to a new URL:
-                return HttpResponseRedirect('/Hasher.html')
+         ##       return HttpResponseRedirect('/Hasher.html')
 
         # if a GET (or any other method) we'll create a blank form
-        else:
-            form = PasswordForm()
+       ## else:
+        ##    form = PasswordForm()
         ##
         return render(request, 'Hasher.html', context=None)
 
